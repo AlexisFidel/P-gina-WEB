@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio - Alexis</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollToPlugin.min.js"></script>
+    <script src="https://unpkg.com/@barba/core"></script>
+    <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init('h6h9Z_bfjH16O-3RI')
+</script>
+</head>
+<body>
+    <!-- Pantalla de carga mejorada -->
+    <div class="loader">
+        <div class="loader-inner">
+            <div class="loader-line-wrap">
+                <div class="loader-line"></div>
+            </div>
+            <div class="loader-logo">A</div>
+        </div>
+    </div>
+
+    <div class="cursor"></div>
+
+    <header>
+        <a href="#" class="logo">Alexis</a>
+        <nav>
+            <a href="#home" class="active">Home</a>
+            <a href="#about">Sobre mí</a>
+            <a href="#skills">Habilidades</a>
+            <a href="#projects">Proyectos</a>
+            <a href="#education">Educación</a>
+            <a href="#contact">Contacto</a>
+        </nav>
+        <div class="mobile-menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <!-- Menú móvil -->
+    <div class="mobile-menu">
+        <div class="close-menu">
+            <i class="fas fa-times"></i>
+        </div>
+        <nav class="mobile-nav">
+            <a href="#home">Home</a>
+            <a href="#about">Sobre mí</a>
+            <a href="#skills">Habilidades</a>
+            <a href="#projects">Proyectos</a>
+            <a href="#education">Educación</a>
+            <a href="#contact">Contacto</a>
+        </nav>
+    </div>
+
+    <!-- Home con efecto 3D mejorado -->
+    <section id="home" class="home">
+        <div class="bg-parallax"></div>
+        <div class="home-img">
+            <div class="img-glow"></div>
+            <img src="images/image 1.png" alt="Alexis">
+        </div>
+        <div class="home-content">
+            <h1>Hola, soy <span>Alexis</span></h1>
+            <h3 class="typing-text">Yo soy: <span></span></h3>
+            <p>"Nos encontramos atrapados en la paradoja de buscar sentido en una realidad que nunca nos lo prometió; sin embargo, es en esa búsqueda donde forjamos lo único que realmente nos pertenece: nuestra propia interpretación del mundo."</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/fidel-palma-971a1127a " target="_blank" data-tooltip="LinkedIn">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/AlexisFidel" target="_blank" data-tooltip="GitHub"> 
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.instagram.com/palmaalexisfidel?igsh=eXFoZzdnZTVjamc1" target="_blank" data-tooltip="Instagram"> 
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+            <a href="#contact" class="btn">Contáctame</a>
+        </div>
+    </section>
+
+    <!-- About con tarjetas interactivas -->
+    <section id="about" class="about">
+        <div class="bg-parallax"></div>
+        <h2>Sobre mí</h2>
+        <div class="about-content">
+            <div class="about-card">
+                <div class="about-card-inner">
+                    <div class="about-card-front">
+                        <i class="fas fa-user"></i>
+                        <h3>¿Quién soy?</h3>
+                    </div>
+                    <div class="about-card-back">
+                        <p>Para mí, estudiar siempre ha sido más que aprender; es experimentar. Aunque quería seguir una carrera, primero tuve que asegurar los recursos necesarios, lo que me llevó a buscar empleo antes de ingresar a la universidad.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about-card">
+                <div class="about-card-inner">
+                    <div class="about-card-front">
+                        <i class="fas fa-laptop-code"></i>
+                        <h3>¿Cuál es mi meta?</h3>
+                    </div>
+                    <div class="about-card-back">
+                        <p>Soy alguien impulsado por la curiosidad y el aprendizaje. No solo me interesa adquirir conocimientos, sino aplicarlos de manera práctica para resolver problemas y crear soluciones. Mi camino ha estado marcado por la exploración, el esfuerzo y el deseo constante de mejorar.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about-card">
+                <div class="about-card-inner">
+                    <div class="about-card-front">
+                        <i class="fas fa-rocket"></i>
+                        <h3>¿A dónde voy?</h3>
+                    </div>
+                    <div class="about-card-back">
+                        <p>Busco un entorno donde pueda desafiarme constantemente, expandir mis conocimientos en nuevas tecnologías y aportar a proyectos innovadores. Más que un destino, quiero un espacio donde probar mis habilidades y seguir creciendo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills con animaciones y datos visuales -->
+    <section id="skills" class="skills">
+        <div class="bg-parallax"></div>
+        <h2>Habilidades</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fab fa-html5"></i>
+                </div>
+                <h3>HTML5</h3>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-progress="45"></div>
+                </div>
+                <span class="skill-percentage">45%</span>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fab fa-css3-alt"></i>
+                </div>
+                <h3>CSS3</h3>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-progress="50"></div>
+                </div>
+                <span class="skill-percentage">50%</span>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fab fa-js"></i>
+                </div>
+                <h3>JavaScript</h3>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-progress="45"></div>
+                </div>
+                <span class="skill-percentage">40%</span>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fab fa-react"></i>
+                </div>
+                <h3>React</h3>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-progress="10"></div>
+                </div>
+                <span class="skill-percentage">10%</span>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fab fa-node-js"></i>
+                </div>
+                <h3>Node.js</h3>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-progress="25"></div>
+                </div>
+                <span class="skill-percentage">25%</span>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fas fa-database"></i>
+                </div>
+                <h3>MongoDB</h3>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-progress="10"></div>
+                </div>
+                <span class="skill-percentage">10%</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proyectos con efectos de hover -->
+    <section id="projects" class="projects">
+        <div class="bg-parallax"></div>
+        <h2>Mis Proyectos</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="images/image-2.jpg" alt="Proyecto 1">
+                </div>
+                <div class="project-content">
+                    <h3>Instalaciones domiciliares</h3>
+                    <p>He realizado instalaciones eléctricas de manera independiente, llevando a cabo todas las etapas del proceso. Comenzando con la planificación, donde elaboré planos, presupuestos, cálculos y dimensionamiento de los componentes necesarios. Luego, pasé a la etapa de estructuración, en la que diseñé el esquema general para cumplir con las funciones requeridas y aquellas deseadas. Finalmente, ejecuté la etapa de implementación, donde materialicé el proyecto, asegurándome de que todo funcionara según lo planeado.</p>
+                    <div class="project-tags">
+                        <span>Electricidad</span>
+                        <span>Electrotecnia</span>
+                        <span>Técnico</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="images/image-3.jpg" alt="Proyecto 2">
+                </div>
+                <div class="project-content">
+                    <h3>Programación y Creación Web</h3>
+                    <p>He aprendido a programar porque siempre me ha fascinado este mundo. Todo comenzó con un sencillo código que usaba para enviar correos electrónicos estilizados, y poco a poco fui avanzando hasta desarrollar el sitio web en el que estás ahora. Puede que no sea algo extraordinario, pero es el resultado de mi esfuerzo y dedicación por aprender de manera autodidacta.</p>
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>CSS + HTML</span>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="images/image-4.jpg" alt="Proyecto 3">
+                </div>
+                <div class="project-content">
+                    <h3>Automatización industrial con PLC</h3>
+                    <p>En la especialidad de Electromecánica, adquirí conocimientos en programación de PLCs (Controladores Lógicos Programables). Tuve la oportunidad de trabajar de manera práctica con la línea LOGO!, donde apliqué los conceptos aprendidos en situaciones reales. Además, estudié la teoría de los modelos S7-1200 y S7-1500, lo que me permitió comprender su funcionamiento y aplicaciones, aunque no tuve la oportunidad de implementarlos de manera práctica en proyectos.</p>
+                    <div class="project-tags">
+                        <span>Automatización</span>
+                        <span>Industria</span>
+                        <span>Técnico</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Educación con línea de tiempo -->
+    <section id="education" class="education">
+        <div class="bg-parallax"></div>
+        <h2>Educación</h2>
+        <div class="education-timeline">
+            <div class="timeline-item">
+                <h3>E.P.E.T N°3</h3>
+                <p class="timeline-date">2019 - 2024</p>
+                <p>Técnico Electromecánico.</p>
+                <p>Especialización en mantenimiento, automatización y administración de proyectos industriales.</p>
+            </div>
+            <div class="timeline-item">
+                <h3>Curso de Introducción a los Hidrocarburos.</h3>
+                <p class="timeline-date">2024</p>
+                <p>Curso completado y aprobado. Dictado por la UTN/FRN en asociación con Tecpetrol y Vista Energy.</p>
+                <p>Conocimientos básicos sobre la industria hidrocarburífera en la cuenca neuquina y en el mundo.</p>
+            </div>
+            <div class="timeline-item">
+                <h3>Curso de Operador en Plantas de Gas.</h3>
+                <p class="timeline-date">2024</p>
+                <p>Curso completado y aprobado. Dictado por la UTN/FRN en asociación con Tecpetrol y Vista Energy.</p>
+                <p>Conocimiento intermedio en los procesos y mecánicas de trabajo seguidas en el sector; desde normas, hasta visualización de procesos en yacimiento.</p>
+            </div>
+            <div class="timeline-item">
+                <h3>Electroneumática - 1</h3>
+                <p class="timeline-date">2024</p>
+                <p>Curso completado y aprobado. Dictado en el C.e.R.E.T</p>
+                <p>Introducción a los procesos y mecanismos de automatización utilizados en la industria. Seguido de una etapa de nivel medio en la que se llevó a cabo un examen final que anexaba todos los principios dictados en clase.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto con formulario interactivo -->
+    <section id="contact" class="contact">
+        <div class="particles-container">
+            <div class="particle particle-1"></div>
+            <div class="particle particle-2"></div>
+            <div class="particle particle-3"></div>
+            <div class="particle particle-4"></div>
+            <div class="particle particle-5"></div>
+            <div class="particle particle-6"></div>
+        </div>
+        <div class="contact-container">
+            <form id="form">
+                <div class="form-group">
+                    <input type="text" name="name" id="name" required>
+                    <label for="name">Nombre</label>
+                    <div class="underline"></div>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email_id" id="email_id" required>
+                    <label for="email_id">Email</label>
+                    <div class="underline"></div>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="title" id="title" required>
+                    <label for="title">Asunto</label>
+                    <div class="underline"></div>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" id="message" required></textarea>
+                    <label for="message">Mensaje</label>
+                    <div class="underline"></div>
+                </div>
+                <button type="submit" id="button" class="submit-btn">
+                    Enviar Email <i class="fas fa-paper-plane"></i>
+                </button>
+            </form>
+            <div class="contact-confirmation">
+                <div class="success-checkmark">
+                    <div class="check-icon"></div>
+                </div>
+                <i class="fas fa-check-circle"></i>
+                <h3>¡Mensaje Enviado!</h3>
+                <p>Gracias por contactarme. Responderé a la brevedad..</p>
+            </div>
+        </div>
+    </section>
+        <div class="contact-info">
+            <div class="contact-info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>Neuquén Capital - Argentina</p>
+            </div>
+            <div class="contact-info-item">
+                <i class="fas fa-envelope"></i>
+                <p>fidelpalma83@gmail.com</p>
+            </div>
+            <div class="contact-info-item">
+                <i class="fas fa-phone"></i>
+                <p>+54 2996720997</p>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h3>Alexis</h3>
+                <p>Técnico Electromecánico</p>
+            </div>
+            <div class="footer-links">
+                <h3>Enlaces Rápidos</h3>
+                <a href="#home">Home</a>
+                <a href="#about">Sobre mí</a>
+                <a href="#skills">Habilidades</a>
+                <a href="#projects">Proyectos</a>
+                <a href="#education">Educación</a>
+                <a href="#contact">Contacto</a>
+            </div>
+            <div class="footer-social">
+                <h3>Puede encontrarme en:</h3>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/fidel-palma-971a1127a " target="_blank" data-tooltip="LinkedIn">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/AlexisFidel" target="_blank" data-tooltip="GitHub"> 
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.instagram.com/palmaalexisfidel?igsh=eXFoZzdnZTVjamc1" target="_blank" data-tooltip="Instagram"> 
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 - Alexis. Esperando ser contratado... </p>
+        </div>
+    </footer>
+
+    <!-- Script principal -->
+    <script src="script.js"></script>
+</body>
+</html>
